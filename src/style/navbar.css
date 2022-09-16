@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+}
+.cryto-navbar {
+  color: white;
+  background-color: rgb(72, 72, 255);
+  padding: 20px 40px;
+  display: flex;
+  gap: 50px !important;
+}
+
+.cryto-navbar p a {
+  font-size: 14px;
+  color: white;
+}
+.appName a {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.cryto-navbar p a:hover {
+  text-decoration: underline;
+}
+.appName a:hover {
+  text-decoration: none !important;
+}
+.crytoIcon {
+  width: 30px;
+}
+.home .currency-totol {
+  color: rgb(22, 86, 212);
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.total-item {
+  background-color: rgb(200, 214, 241);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+.total-item:hover {
+  background-color: rgb(184, 200, 231);
+  cursor: pointer;
+}
+.currency-result {
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+.crytoItems {
+  margin-bottom: 100px;
+}
+.crytoItem {
+  padding: 10px 20px 20px;
+  background-color: aliceblue;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.crytoItem:hover {
+  box-shadow: 5px 5px 10px rgb(210, 230, 248);
+}
+.crytoItem .crytoIcon {
+}
+.crytoItem p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.crytoItem .crytoName {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 12px 0px;
+}
+.crytoItem .crytoBox {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crytoDetails h3 {
+  margin-top: 20px;
+}
