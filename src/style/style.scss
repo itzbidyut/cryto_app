@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+$bgcolor: #bba8ff;
+$bgcolor2: #724bff;
+$textcolor: #5f6ed9;
+$fontcolor: #8775f0;
+$fontcolor: #6da2f8;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+}
+.cryto-navbar {
+  color: white;
+  background-color: $bgcolor2;
+  padding: 20px 40px;
+  display: flex;
+  gap: 50px !important;
+}
+
+.cryto-navbar p a {
+  font-size: 14px;
+  color: white;
+}
+.appName a {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.cryto-navbar p a:hover {
+  text-decoration: underline;
+}
+.appName a:hover {
+  text-decoration: none !important;
+}
+.crytoIcon {
+  width: 30px;
+}
+// loading
+.loadingbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  .loadingIcon {
+    width: 200px;
+    height: 200px;
+    background-image: url(../../public/assets/loading.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// home page
+
+.home {
+  padding-top: 200px;
+  .hone-bg {
+    background-image: url(../../public/assets/home-Bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+  }
+  .line {
+    width: 700px;
+    border-bottom: 1px solid white;
+    margin-bottom: 35px;
+  }
+  .total-item-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .total-item {
+    transition: 0.3s;
+    background-color: rgba(206, 215, 235, 0.582);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    min-width: 200px;
+  }
+  .currency-totol {
+    color: white;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .crytoItems {
+    margin-bottom: 100px;
+  }
+  .crytoItem {
+    padding: 10px 20px 20px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .crytoItem:hover {
+    box-shadow: 5px 5px 10px rgb(210, 230, 248);
+  }
+
+  .crytoItem p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .crytoItem .crytoName {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 12px 0px;
+  }
+  .crytoItem .crytoBox {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .total-item:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+  }
+  .currency-result {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  h2 {
+    color: white;
+    margin-top: 150px;
+  }
+}
+
+// cryptoDetailsPage-------------
+
+.cryptoDetailsPage {
+  min-height: 700px;
+  .crytoDetails h3 {
+    margin-top: 20px;
+  }
+  .header {
+    background-image: url("../../public/assets/bdimg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: grayscale(30%);
+    padding: 140px 0px 60px;
+    background-color: $bgcolor;
+    .details {
+      display: flex;
+      gap: 10px;
+      p {
+        background: #5f6dd93d;
+        padding: 3px 10px;
+        border-radius: 30px;
+        color: #8b95db;
+      }
+    }
+    .sym {
+      font-size: 14px;
+      position: relative;
+      top: 7px;
+      font-weight: 600;
+      color: #724df8;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #4a1bf7;
+    font-weight: bold;
+  }
+  .flex {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    gap: 15px;
+  }
+  img {
+    width: 37px;
+    position: relative;
+    top: -5px;
+  }
+  .body {
+    margin: 100px 0px;
+    padding: 0px 300px;
+  }
+  .crytoItems {
+    margin-bottom: 100px;
+  }
+  .crytoItem {
+    padding: 10px 20px 20px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .crytoItem:hover {
+    box-shadow: 5px 5px 10px rgb(210, 230, 248);
+  }
+
+  .crytoItem p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .crytoItem .crytoName {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 12px 0px;
+  }
+  .crytoItem .crytoBox {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .total-item:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+  }
+  .currency-result {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+}
+.Cryto-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  input {
+    height: 40px;
+  }
+}

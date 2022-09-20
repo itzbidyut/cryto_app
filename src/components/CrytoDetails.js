@@ -2,6 +2,8 @@ import HTMLReactParser from "html-react-parser";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import Loading from "./Loading";
+import { Link } from "react-router-dom";
 import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
 export default function CrytoDetails() {
   const { id } = useParams();
@@ -16,24 +18,34 @@ export default function CrytoDetails() {
   //   ];
 
   console.log(cryptoDetails);
-  if (isFetching) return " Loading...";
+  if (isFetching) return <Loading />;
   return (
-    <div className="mt-5 container">
-      <img
-        src={cryptoDetails.iconUrl}
-        alt={cryptoDetails.name}
-        className="crytoIcon pr-3"
-      />
-      <h1>{cryptoDetails.name}</h1>
-      <p>Rank- {cryptoDetails.rank}</p>
-      <p>btcPrice- {cryptoDetails.btcPrice}</p>
-      <p>symbol- {cryptoDetails.symbol}</p>
-      <p>websiteUrl- {cryptoDetails.websiteUrl}</p>
-      <h3>
-        What is <u>{cryptoDetails.name}</u>
-      </h3>
-      <div className="crytoDetails">
-        {HTMLReactParser(cryptoDetails.description)}
+    <div className="cryptoDetailsPage">
+      <div className="header">
+        <div className="container">
+          <a className="flex" href={cryptoDetails.websiteUrl}>
+            <img src={cryptoDetails.iconUrl} alt={cryptoDetails.name} />
+            <h1>{cryptoDetails.name}</h1>{" "}
+            <p className="sym">{cryptoDetails.symbol}</p>
+          </a>
+          <div className="details">
+            <p>Rank- {cryptoDetails.rank}</p>
+            <p>Price- ${cryptoDetails.btcPrice}</p>
+
+            {/* <p>websiteUrl- {cryptoDetails.websiteUrl}</p> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="body">
+        <div className="container">
+          <h3>
+            What is <u>{cryptoDetails.name}</u>
+          </h3>
+          <div className="crytoDetails">
+            {HTMLReactParser(cryptoDetails.description)}
+          </div>
+        </div>
       </div>
     </div>
   );
