@@ -57,6 +57,15 @@ a {
   }
 }
 
+.Cryto-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  input {
+    height: 40px;
+  }
+}
+
 // home page
 
 .home {
@@ -247,12 +256,19 @@ a {
     font-weight: bold;
     margin-bottom: 0px;
   }
-}
-.Cryto-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-  input {
-    height: 40px;
+  .cryto-details-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .cryto-details-item {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid gray;
+  }
+  .cryto-details-items {
   }
 }

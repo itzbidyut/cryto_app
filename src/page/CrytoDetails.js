@@ -1,9 +1,8 @@
 import HTMLReactParser from "html-react-parser";
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import Loading from "./Loading";
-import { Link } from "react-router-dom";
+import millify from "millify";
+import Loading from "../components/Loading";
 import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
 export default function CrytoDetails() {
   const { id } = useParams();
@@ -30,7 +29,7 @@ export default function CrytoDetails() {
           </a>
           <div className="details">
             <p>Rank- {cryptoDetails.rank}</p>
-            <p>Price- ${cryptoDetails.btcPrice}</p>
+            {/* <p>Price- </p> */}
 
             {/* <p>websiteUrl- {cryptoDetails.websiteUrl}</p> */}
           </div>
@@ -39,7 +38,37 @@ export default function CrytoDetails() {
 
       <div className="body">
         <div className="container">
-          <h3>
+          <div className="cryto-details-list">
+            <div className="cryto-details-items">
+              <div className="cryto-details-item">
+                <p>{cryptoDetails.name} price</p>
+                <p>$ {cryptoDetails.btcPrice}</p>
+              </div>
+              <div className="cryto-details-item">
+                <p>24h Volume</p>
+                <p>$ {millify(cryptoDetails["24hVolume"])}</p>
+              </div>
+              <div className="cryto-details-item">
+                <p>Number Of Exchanges</p>
+                <p>{cryptoDetails["numberOfExchanges"]}</p>
+              </div>
+            </div>
+            <div className="cryto-details-items">
+              <div className="cryto-details-item">
+                <p>Market Cap</p>
+                <p>$ {millify(cryptoDetails.marketCap)} </p>
+              </div>
+              <div className="cryto-details-item">
+                <p>All Time High</p>
+                <p>$ {millify(cryptoDetails.allTimeHigh.price)}</p>
+              </div>{" "}
+              <div className="cryto-details-item">
+                <p>Number Of Marketse</p>
+                <p>{cryptoDetails["numberOfMarkets"]}</p>
+              </div>
+            </div>
+          </div>
+          <h3 className="mt-5 pt-5">
             What is <u>{cryptoDetails.name}</u>
           </h3>
           <div className="crytoDetails">
