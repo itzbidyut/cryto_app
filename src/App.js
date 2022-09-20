@@ -1,15 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import Home from "./page/Home";
+import Crytocurrencies from "./page/Crytocurrencies";
 import "./style/style.scss";
 
-import {
-  Navbar,
-  Home,
-  Crytocurrencies,
-  Exchanges,
-  News,
-  CrytoDetails,
-} from "./components";
+import { Navbar, Exchanges, News, CrytoDetails } from "./components";
 function App() {
   return (
     <Router>

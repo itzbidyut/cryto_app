@@ -4,13 +4,12 @@ import millify from "millify";
 import { Link } from "react-router-dom";
 import { useGetCryptoQuery } from "../services/cryptoApi";
 import Crytocurrencies from "./Crytocurrencies";
-import Loading from "./Loading";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const { data, isFetching } = useGetCryptoQuery(10);
 
   const stats = data?.data?.stats;
-  console.log(data);
   if (isFetching) return <Loading />;
   return (
     <>
