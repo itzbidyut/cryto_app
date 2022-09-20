@@ -8,7 +8,6 @@ import Loading from "../components/Loading";
 
 export default function Home() {
   const { data, isFetching } = useGetCryptoQuery(10);
-
   const stats = data?.data?.stats;
   if (isFetching) return <Loading />;
   return (

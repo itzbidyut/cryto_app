@@ -63,7 +63,7 @@ export default function CrytoDetails() {
                 <p>$ {millify(cryptoDetails.allTimeHigh.price)}</p>
               </div>{" "}
               <div className="cryto-details-item">
-                <p>Number Of Marketse</p>
+                <p>Number Of Markets</p>
                 <p>{cryptoDetails["numberOfMarkets"]}</p>
               </div>
             </div>
