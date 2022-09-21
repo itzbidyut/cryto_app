@@ -43,7 +43,7 @@ export default function Crytocurrencies({ simplified }) {
         <div className="crytoItems row">
           {cryptos ? (
             cryptos.map((item) => (
-              <div className="col-3 mt-3" key={item.uuid}>
+              <div className="col-12 col-md-3 mt-3" key={item.uuid}>
                 <Link to={`/cryto-currencies/${item.uuid}`}>
                   <div className="crytoItem ">
                     <div className="crytoBox">

@@ -14,8 +14,8 @@ export default function NewsItemHome({ simplified }) {
   console.log(data);
   return (
     <div className="NewsItemHome">
-      <h2 className="">Top 10 Cryto Currencies in the world</h2>
-      <Link to="/cryto-currencies">Show more</Link>
+      <h2 className="">Latest Crypto News</h2>
+      <Link to="/news">Show more</Link>
       <div className="row mt-5">
         {data.value.map((item) => (
           <div className="col-md-4">
