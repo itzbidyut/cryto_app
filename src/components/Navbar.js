@@ -14,10 +14,10 @@ export default function Navbar() {
       </p>
       {/* <p>
         <Link to="/exchanges">Exchanges</Link>
-      </p>
+      </p> */}
       <p>
         <Link to="/news">News</Link>
-      </p> */}
+      </p>
     </div>
   );
 }

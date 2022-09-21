@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useGetCryptoQuery } from "../services/cryptoApi";
 import Crytocurrencies from "./Crytocurrencies";
 import Loading from "../components/Loading";
+import NewsItemHome from "../components/NewsItemHome";
 
 export default function Home() {
   const { data, isFetching } = useGetCryptoQuery(10);
@@ -14,7 +15,7 @@ export default function Home() {
     <>
       <div className="home">
         <div className="hone-bg"></div>
-        <div className="container">
+        <div className="container header-container">
           <h1 className="">Global Cryto Stats</h1>
           <div className="center">
             <div className="line"></div>
@@ -50,6 +51,9 @@ export default function Home() {
         </div>
         <div className="crytoItems">
           <Crytocurrencies simplified />
+        </div>
+        <div className="container">
+          <NewsItemHome simplified />
         </div>
       </div>
     </>
