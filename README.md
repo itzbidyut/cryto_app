@@ -1,2 +1,2 @@
 Live preview of this app -
-cryptocurrencies-bidyut.netlify.app
+https://cryptocurrencies-bidyut.netlify.app/
